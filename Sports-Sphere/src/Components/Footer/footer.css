@@ -1,0 +1,54 @@
+/* Footer.css */
+
+/* Define the font */
+@font-face {
+  font-family: 'head'; 
+  src: url('/fonts/Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Basic footer styles */
+.footer {
+  background-color: #212346;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* font-family: 'head';  */
+  font-family:'head' ;
+  letter-spacing: 1px;
+    font-weight: 700;
+  font-size: 18px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffff;
+  
+}
+
+.footer-info p {
+  margin-top: 13px;
+  font-size: 14px;
+  font-family: head;
+  color: #ffff;
+    font-weight: 700;
+  font-size: 16px;
+  
+}
