@@ -1,7 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom' // Step 1
 import './Login.css' // Assuming you have a CSS file for styles
 
 const Login = () => {
+    const navigate = useNavigate() // Step 2
+  
+    const handleNavigation = () => {
+      navigate('/') // Step 3: Navigate to the home page
+    }
   return (
     <div className='main-content'>
       <div className='div-form'>
@@ -34,8 +40,6 @@ const Login = () => {
             Continue with Google
           </button>
 
-        
-
           <div className='separator'>
             <div></div>
             <span>OR</span>
@@ -45,7 +49,7 @@ const Login = () => {
           <input type='email' placeholder='Email' name='email' />
           <input type='password' placeholder='Password' name='email' />
 
-          <button className='oauthButton1'>
+          <button className='oauthButton1' onClick={handleNavigation}>
             Let's go
             <svg
               className='icon'
@@ -72,9 +76,7 @@ const Login = () => {
             <div></div>
           </div>
 
-          <h6> 
-            Forget Password 
-            Or Create New Account</h6>
+          <h6>Forget Password Or Create New Account</h6>
         </form>
       </div>
     </div>

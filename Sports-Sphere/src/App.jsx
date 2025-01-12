@@ -6,7 +6,8 @@ import Login from "../src/Pages/Login/Login";
 import Signup from './Pages/Signup/Signup';
 import About from './Pages/About/About';
 import Navbar from './Components/Navbar';
-import Footer from './Components/Footer/Footer';
+// import Footer from './Components/Footer/Footer';
+import Findteam from './Pages/Findteam/Findteam';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/Login' element={<Login />} />
           <Route path='/Signup' element={<Signup />} />
           <Route path='/About' element={<About />} />
+          <Route path='/Findteam' element={<Findteam />} />
         </Routes>
       </Router>
       

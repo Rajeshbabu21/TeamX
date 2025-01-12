@@ -1,14 +1,20 @@
 import React from 'react'
-import "./signup.css"
+import { useNavigate } from 'react-router-dom' // Step 1
+import './signup.css'
+
 const Signup = () => {
+  const navigate = useNavigate() // Step 2
+
+  const handleNavigation = () => {
+    navigate('/') // Step 3: Navigate to the home page
+  }
+
   return (
     <div className='main-content'>
       <div className='div-form1'>
         <form className='form'>
           <p>Welcome to Teamx</p>
-          <h6 className='please'>
-            Please Signup to continue
-          </h6>
+          <h6 className='please'>Please Signup to continue</h6>
 
           <button className='oauthButton'>
             <svg className='icon' viewBox='0 0 24 24'>
@@ -44,7 +50,9 @@ const Signup = () => {
           <input type='password' placeholder='Password' name='email' />
           <input type='password' placeholder='Confirm Password' name='email' />
 
-          <button className='oauthButton1'>
+          <button className='oauthButton1' onClick={handleNavigation}>
+            {' '}
+            {/* Step 4: Move onClick here */}
             Let's go
             <svg
               className='icon'
@@ -63,15 +71,13 @@ const Signup = () => {
             </svg>
           </button>
 
-          {/* separator */}
-
           <div className='separator'>
             <div></div>
             <span>OR</span>
             <div></div>
           </div>
 
-          <h6>Already have an account ?  Login</h6>
+          <h6>Already have an account? Login</h6>
         </form>
       </div>
     </div>
