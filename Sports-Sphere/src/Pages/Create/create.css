@@ -13,12 +13,13 @@
 
 .form-container {
   background-color: white;
-  height: 320px;
+  height: 340px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 450px;
+  letter-spacing: 1px;
 }
 
 
@@ -57,6 +58,7 @@
  
   width: 100%;
   padding: 13px;
+  letter-spacing: 1px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 14px;
@@ -97,12 +99,14 @@
   margin-top: 20px;
   margin-left: 120px;
   /* border: 2px solid black; */
+  letter-spacing: 1px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  letter-spacing: 1px;
 }
 
 th {
@@ -113,6 +117,7 @@ th {
   font-size: 22px;
   color: #212346;
   font-weight: 900;
+  letter-spacing: 1px;
 }
 
 td {
@@ -131,6 +136,14 @@ td {
 th {
   background-color: #f4f4f4;
   /* font-weight: bold; */
+}
+
+
+.error-message{
+ font-family: 'content';
+ margin-bottom: 13px;
+ color: red;
+ /* letter-spacing: 1px; */
 }
 
 

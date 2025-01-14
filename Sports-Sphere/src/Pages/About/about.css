@@ -22,9 +22,9 @@
  padding: 20px;
 }
 
-.aboutins{
+.aboutins h1{
   background: #ce3a81;
-  width: 300px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
