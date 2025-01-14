@@ -4,7 +4,26 @@ import Footer from '../../Components/Footer/Footer'
 import Img from "../../assets/poster.jpg"
 import Sid from  "../../assets/sid.jpg"
 
+
+import { useNavigate } from 'react-router-dom' // Step 1
+
 const Home = () => {
+
+   const navigate = useNavigate() // Step 2
+
+   const handleNavigation = () => {
+     navigate('/Findteam') // Step 3: Navigate to the home page
+
+   }
+
+   const handleCreate = () => {
+     navigate('/Create') // Step 3: Navigate to the home page
+   }
+
+   const handleSchedule = () => {
+     navigate('/Schedule') // Step 3: Navigate to the home page
+   }
+
   return (
     <div className='home'>
       <div className='main-content'>
@@ -60,7 +79,9 @@ const Home = () => {
             <div class='content'>
               Build your team profile, add members, and set up roles with ease.
               <br />
-              <button class='button'>Go > </button>
+              <button class='button' onClick={handleCreate}>
+                Go
+              </button>
             </div>
           </div>
 
@@ -72,7 +93,9 @@ const Home = () => {
               Explore a wide range of sports teams tailored to your interests
               and skill level.
               <br />
-              <button class='button'>Go ></button>
+              <button class='button' onClick={handleNavigation}>
+                Go
+              </button>
             </div>
           </div>
 
@@ -83,7 +106,9 @@ const Home = () => {
             <div class='content'>
               Set up practices, games, and team events with just a few clicks.
               <br />
-              <button class='button'>Go ></button>
+              <button class='button' onClick={handleSchedule}>
+                Go
+              </button>
             </div>
           </div>
         </div>

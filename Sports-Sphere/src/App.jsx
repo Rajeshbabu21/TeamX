@@ -6,8 +6,9 @@ import Login from "../src/Pages/Login/Login";
 import Signup from './Pages/Signup/Signup';
 import About from './Pages/About/About';
 import Navbar from './Components/Navbar';
-// import Footer from './Components/Footer/Footer';
 import Findteam from './Pages/Findteam/Findteam';
+import Create from './Pages/Create/Create';
+import Schedule from './Pages/Schedule/Schedule';
 
 const App = () => {
   return (
@@ -21,6 +22,8 @@ const App = () => {
           <Route path='/Signup' element={<Signup />} />
           <Route path='/About' element={<About />} />
           <Route path='/Findteam' element={<Findteam />} />
+          <Route path='/Create' element={<Create />} />
+          <Route path='/Schedule' element={<Schedule />} />
         </Routes>
       </Router>
       
