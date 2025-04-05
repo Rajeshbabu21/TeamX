@@ -47,6 +47,7 @@ const Create = () => {
       name: '',
       sport: '',
     })
+    
     setError('')
   }
 

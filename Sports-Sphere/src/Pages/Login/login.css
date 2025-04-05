@@ -86,6 +86,21 @@
 }
 
 
+.link{
+  text-decoration: none;
+  color: var(--font-color);
+  font-family: var(--font-SpaceMono);
+  font-weight: 600;
+  font-size: 17px;
+  color: #666;
+}
+
+.link:hover{
+  color: #ce3a81;
+  text-decoration: underline;
+}
+
+
 
 
 .oauthButton::before {
